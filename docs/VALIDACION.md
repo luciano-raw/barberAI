@@ -1,5 +1,12 @@
 # Validación · Iteración inicial · 10 de noviembre de 2026
 
+## Publicación inicial en GitHub
+
+- Publicación autorizada explícitamente por el propietario. origin inicialmente sin referencias; primer commit a83b72b subido a main correctamente.
+- Revisados 45 archivos candidatos antes del commit: sin claves secretas/publicables reales incrustadas, URLs PostgreSQL con contraseña ni claves privadas según búsqueda de patrones. .env.local y .local/test-accounts.json ignorados por Git.
+- git diff --cached --check sin errores. No se cambió código ejecutable ni se repitieron los checks ya aprobados en la última iteración.
+- No hubo despliegue Vercel por Codex. Importar main como Next.js y configurar solo NEXT_PUBLIC_SUPABASE_URL y NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY para el panel actual. Las credenciales administrativas de scripts locales no son necesarias en Vercel.
+
 ## Aprovisionamiento autorizado de cuentas de prueba
 
 - Clave administrativa guardada solo en .env.local; .local/ añadido a .gitignore para guardar contraseñas/UUID de fixtures.

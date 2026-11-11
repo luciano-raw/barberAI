@@ -13,6 +13,7 @@ Cada casilla exige el criterio indicado. Diseño SQL y pantalla inicial no equiv
 - [x] E0-07 Verificación: lint, typecheck y build terminan con código 0; evidencia y limitaciones en VALIDACION.md.
 - [x] E0-08 Git local: repositorio inicializado en main, sin commits ni remoto; .env.local ignorado.
 - [ ] E0-09 GitHub: propietario crea remoto privado, revisa identidad y conecta/publica el código sin secretos.
+  Primer commit a83b72b publicado correctamente en origin/main; identidad Git configurada y archivos privados excluidos. Privacidad del repositorio pendiente de confirmar en GitHub.
 
 ## A · Fundamentos, autenticación y seguridad
 
@@ -99,6 +100,6 @@ Cada casilla exige el criterio indicado. Diseño SQL y pantalla inicial no equiv
 ## Bloqueos e intervención humana
 
 - Supabase configurado. Seis usuarios ficticios creados, dos tenants pausados y roles asignados con autorización del propietario. Login/logout e aislamiento de lectura de tenants comprobados por API con JWT de cada cuenta. Pendientes pruebas SSR/navegador y matriz completa RLS.
-- Origin configurado: https://github.com/luciano-raw/barberAI.git. Sin commits/push; privacidad y permisos remotos no verificados.
+- Primer commit publicado en main de https://github.com/luciano-raw/barberAI.git. Push autorizado y correcto; privacidad pendiente de confirmar en GitHub.
 - Meta y OpenRouter pendientes en etapas posteriores; no necesarios ahora.
 - Revisión de tratamiento de datos personales y retención pendiente antes de cargar datos reales.
