@@ -16,7 +16,7 @@ Copy-Item .env.example .env.local
 npm run dev
 ```
 
-Abrir http://localhost:3000. La pantalla inicial funciona sin credenciales. No poner secretos en variables NEXT_PUBLIC_. No subir .env.local ni datos de clientes.
+Abrir http://localhost:3000: redirige a /ingresar. El formulario indica si falta configuración. No poner secretos en variables NEXT_PUBLIC_. No subir .env.local ni datos de clientes.
 
 Acceso en /ingresar. /panel lista las barberías autorizadas con resumen, agenda en tabla, clientes, equipo, servicios y actividad. Consultas reales bajo RLS; falta probar con Supabase configurado. Barberos no acceden a clientes ni actividad.
 

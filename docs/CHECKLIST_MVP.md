@@ -4,6 +4,8 @@ Cada casilla exige el criterio indicado. Diseño SQL y pantalla inicial no equiv
 
 ## Etapa 0 · Entregables iniciales
 
+- [x] UI-01 Retirar pantalla de preparación: / redirige al ingreso y el título deja de mostrar “Base del proyecto”.
+
 - [x] E0-01 Inspección: carpeta inicialmente vacía, sin proyecto ni Git existente.
 - [x] E0-02 Base Next.js: App Router, React, TypeScript strict, Tailwind v4, ESLint y configuración shadcn/ui con Button accesible presentes.
 - [x] E0-03 Documentación: README, AGENTS, arquitectura, plan, checklist y guías de configuración creados.

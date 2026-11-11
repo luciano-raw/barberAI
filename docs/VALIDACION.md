@@ -1,5 +1,12 @@
 # Validación · Iteración inicial · 10 de noviembre de 2026
 
+## Retiro de pantalla de preparación
+
+- Eliminada la pantalla pública con etapas, mensajes estáticos de conexión e instrucciones técnicas. / redirige a /ingresar; título global actualizado a “BarberAI | Gestión para barberías”.
+- npm run lint y npm run typecheck: código 0. git diff --check sin errores.
+- Cambio de navegación simple, sin pruebas nuevas; no modifica autenticación, permisos ni datos.
+- npm run build: código 0 con Webpack. Despliegue y comprobación del dominio Vercel pendientes del flujo automático del repositorio.
+
 ## Publicación inicial en GitHub
 
 - Publicación autorizada explícitamente por el propietario. origin inicialmente sin referencias; primer commit a83b72b subido a main correctamente.
