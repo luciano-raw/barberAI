@@ -1,0 +1,4 @@
+export function DataTable({ headings, rows }: { headings: string[]; rows: string[][] }) {
+  if (!rows.length) return <div className="p-10 text-center"><h2 className="font-semibold">Todavía no hay registros</h2><p className="mt-2 text-sm text-slate-500">Aquí aparecerá la información de esta barbería cuando esté registrada.</p></div>;
+  return <div className="overflow-x-auto"><table className="w-full text-left text-sm"><thead className="border-b border-border bg-slate-50"><tr>{headings.map(h => <th key={h} scope="col" className="whitespace-nowrap px-6 py-4 font-medium text-slate-500">{h}</th>)}</tr></thead><tbody className="divide-y divide-border">{rows.map((row, i) => <tr key={i}>{row.map((cell, j) => <td key={j} className="whitespace-nowrap px-6 py-5">{cell}</td>)}</tr>)}</tbody></table></div>;
+}
