@@ -89,3 +89,7 @@ Acción humana siguiente: completar clave publicable en .env.local; revisar/ejec
 - Lint, typecheck y las cuatro pruebas existentes pasaron. Build pasó fuera del sandbox después de EPERM en la generación de archivos dentro del sandbox.
 - Pendiente aplicar manualmente la migración y verificar alta, estados, auditoría y denegación con usuarios de otros roles. Las pruebas existentes no ejecutan estas funciones SQL. El formulario de alta requiere UUID de una cuenta existente.
 El propietario confirmó la aplicación de la migración de administración en Supabase sin errores. Queda pendiente validar el flujo autenticado en Vercel.
+
+## Revisión del panel en Vercel
+
+El propietario confirmó alta, activación, pausa y los tres eventos de C. La ruta de la captura incluye el UUID de la barbería y termina en una sección inexistente. Sigue pendiente comprobar la ruta global con una cuenta de dueño y probar las RPC con un rol sin permiso. Se agregaron etiquetas en español para Actividad y un 404 con regreso al panel. Lint, typecheck y build pasaron. Pendiente publicar y verificar visualmente el cambio.

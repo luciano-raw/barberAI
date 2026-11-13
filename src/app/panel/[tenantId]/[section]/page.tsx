@@ -41,7 +41,17 @@ export default async function TenantPanel({ params }: { params: Promise<{ tenant
   }
   if (section === "actividad") {
     headings = ["Fecha · Santiago", "Acción", "Origen"];
-    rows = (await readRows(supabase, tenantId, "audit_events")).map(r => [date(r.created_at), r.action, ({ human: "Equipo", agent: "Asistente", system: "Sistema" })[r.actor_type] ?? r.actor_type]);
+    const actionLabels = new Map([
+      ["tenant.created", "Barbería creada"],
+      ["tenant.status.active", "Barbería activada"],
+      ["tenant.status.paused", "Barbería pausada"],
+      ["tenant.status.archived", "Barbería archivada"],
+    ]);
+    rows = (await readRows(supabase, tenantId, "audit_events")).map(event => [
+      date(event.created_at),
+      actionLabels.get(event.action) ?? "Actividad registrada",
+      ({ human: "Equipo", agent: "Asistente", system: "Sistema" })[event.actor_type] ?? "Sin información",
+    ]);
   }
   const nav = Object.entries(sections).filter(([key]) => canReadSection(membership.role, key));
   return <div className="min-h-screen md:grid md:grid-cols-[240px_1fr]">

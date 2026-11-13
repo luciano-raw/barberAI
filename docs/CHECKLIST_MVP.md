@@ -111,9 +111,17 @@ Cada casilla exige el criterio indicado. Diseño SQL y pantalla inicial no equiv
 - [x] Fundamentos iniciales: esquema aplicado, cuentas de prueba y lectura aislada comprobada por API.
 - [ ] Cerrar semana 1: verificar inicio/cierre de sesión en navegador y acceso denegado a la barbería ajena. Completar matriz de permisos.
 - [ ] Semana 2, primer corte: aplicar migración de administración y comprobar alta con propietario, activación, pausa y auditoría. Código preparado en /panel/administracion.
+  - [x] Migración de administración aplicada en Supabase, según confirmó el propietario.
+  - [x] Listado de las barberías de prueba A y B confirmado en Vercel desde el panel de administración.
+  - [x] Alta con propietario existente comprobada en Vercel: C se creó pausada. El dueño A ve A y C en su listado, mientras B queda fuera.
+  - [x] Activación, pausa y eventos de auditoría de C confirmados por el propietario en Vercel.
+  - [ ] Verificar denegación con cuenta de dueño en /panel/administracion y en las RPC de administración.
+  - [ ] Validar en Vercel las etiquetas de Actividad y la página 404 en español.
+  - [ ] Revisar privacidad antes del piloto: evitar datos personales en rutas y logs, verificar aislamiento con una ruta ajena y acordar retención y eliminación de datos.
 - [ ] Semana 2, segundo corte: alta de barberos y servicios, configuración de horarios y clientes de una barbería.
 - [ ] Semana 2, tercer corte: crear, reagendar y cancelar una reserva desde el panel, con prueba de solapamiento concurrente.
 - [ ] Semana 3: conectar el flujo de reservas con WhatsApp y agente.
 - [ ] Semanas 4–6: cierres y comisiones, autonomía y aprobaciones, recordatorios y piloto.
 
 El desarrollo sigue en el repositorio y Supabase actuales con datos de prueba. Cuando el cliente entregue sus accesos, transferir código e historial, aplicar migraciones al Supabase de destino, configurar variables y dominio en el hosting de destino y verificar Auth/RLS allí. Coordinar qué datos se transfieren antes del corte.
+- [ ] Después de validar Supabase: mostrar cuenta y rol vigente en el encabezado del panel. Aplicar la paleta cuando el cliente la entregue.
