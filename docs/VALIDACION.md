@@ -93,3 +93,7 @@ El propietario confirmó la aplicación de la migración de administración en S
 ## Revisión del panel en Vercel
 
 El propietario confirmó alta, activación, pausa y los tres eventos de C. La ruta de la captura incluye el UUID de la barbería y termina en una sección inexistente. Sigue pendiente comprobar la ruta global con una cuenta de dueño y probar las RPC con un rol sin permiso. Se agregaron etiquetas en español para Actividad y un 404 con regreso al panel. Lint, typecheck y build pasaron. Pendiente publicar y verificar visualmente el cambio.
+
+## Cuenta y rol en el panel
+
+El propietario confirmó que el bloque SQL de denegación de las tres RPC administrativas terminó sin errores con rol de dueño simulado y rollback. El encabezado del selector y del espacio de barbería muestra el correo autenticado y su rol correspondiente. Lint, typecheck y build pasaron. Pendiente comprobar en navegador y publicar.
