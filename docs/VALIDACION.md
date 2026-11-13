@@ -82,3 +82,10 @@ Implementados login/logout por acciones de servidor, cliente SSR por solicitud, 
 - Mantener pendientes A-02/A-03/A-05 y F-02 hasta verificar integración real. Continúan los avisos de dependencias y Node descritos arriba.
 
 Acción humana siguiente: completar clave publicable en .env.local; revisar/ejecutar migración en desarrollo; crear usuario ficticio y membresía con la guía SUPABASE_SETUP.md. Luego probar sesión, rol y dos tenants antes de habilitar escrituras.
+
+## Semana 2 · Administración de barberías
+
+- Implementadas la ruta /panel/administracion y las operaciones de alta con propietario existente, activación y pausa. El SQL comprueba el rol en cada llamada y registra alta y cambios de estado en la misma transacción.
+- Lint, typecheck y las cuatro pruebas existentes pasaron. Build pasó fuera del sandbox después de EPERM en la generación de archivos dentro del sandbox.
+- Pendiente aplicar manualmente la migración y verificar alta, estados, auditoría y denegación con usuarios de otros roles. Las pruebas existentes no ejecutan estas funciones SQL. El formulario de alta requiere UUID de una cuenta existente.
+El propietario confirmó la aplicación de la migración de administración en Supabase sin errores. Queda pendiente validar el flujo autenticado en Vercel.

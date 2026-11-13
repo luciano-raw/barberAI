@@ -20,7 +20,7 @@ Los formularios mínimos se construyen con sus casos de uso en etapas 1–7. La 
 
 ## Próxima iteración concreta
 
-Revisar y ejecutar manualmente el borrador SQL en Supabase de desarrollo, implementar Auth SSR y sesión verificada; automatizar pruebas de aislamiento con dos tenants antes de habilitar escrituras. No conectar WhatsApp/OpenRouter todavía.
+Validar sesión y aislamiento en navegador. Aplicar manualmente la migración de administración en Supabase de desarrollo y comprobar alta con propietario, activación, pausa y auditoría. Luego implementar barberos, servicios y horarios para probar una reserva completa antes de conectar WhatsApp y OpenRouter. El orden de entrega semanal está en CHECKLIST_MVP.md.
 
 ## Intervención humana
 

@@ -60,3 +60,9 @@ commit;
 Queda pausada y vacía. No repitas el bloque sin revisar si ya existe la barbería. No es un flujo de alta de producción.
 
 No compartas contraseñas ni tokens; rota cualquiera que se haya compartido. La contraseña Postgres no se necesita para este acceso. Contrasta la URL local preparada desde tu referencia con Connect.
+
+## Administración de barberías
+
+Aplica manualmente `supabase/migrations/202611120001_platform_management.sql` una vez en Supabase de desarrollo después de la migración inicial. Ingresa como administrador de plataforma y abre **Administrar barberías**. Para crear una barbería usa el UUID de un propietario de prueba que ya exista en Authentication > Users.
+
+Comprueba que nace pausada, que su propietario la ve, y que se puede activar y volver a pausar. En Actividad del propietario comprueba los eventos de alta y cambio de estado. Con dueño y usuario sin membresía comprueba que /panel/administracion devuelve acceso denegado (404). Verifica también que las RPC rechazan el acceso con el JWT de esos usuarios. Un UUID inexistente debe rechazar el alta sin dejar una barbería huérfana.

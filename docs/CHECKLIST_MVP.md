@@ -105,3 +105,15 @@ Cada casilla exige el criterio indicado. Diseño SQL y pantalla inicial no equiv
 - Primer commit publicado en main de https://github.com/luciano-raw/barberAI.git. Push autorizado y correcto; privacidad pendiente de confirmar en GitHub.
 - Meta y OpenRouter pendientes en etapas posteriores; no necesarios ahora.
 - Revisión de tratamiento de datos personales y retención pendiente antes de cargar datos reales.
+
+## Orden de entrega según propuesta aprobada
+
+- [x] Fundamentos iniciales: esquema aplicado, cuentas de prueba y lectura aislada comprobada por API.
+- [ ] Cerrar semana 1: verificar inicio/cierre de sesión en navegador y acceso denegado a la barbería ajena. Completar matriz de permisos.
+- [ ] Semana 2, primer corte: aplicar migración de administración y comprobar alta con propietario, activación, pausa y auditoría. Código preparado en /panel/administracion.
+- [ ] Semana 2, segundo corte: alta de barberos y servicios, configuración de horarios y clientes de una barbería.
+- [ ] Semana 2, tercer corte: crear, reagendar y cancelar una reserva desde el panel, con prueba de solapamiento concurrente.
+- [ ] Semana 3: conectar el flujo de reservas con WhatsApp y agente.
+- [ ] Semanas 4–6: cierres y comisiones, autonomía y aprobaciones, recordatorios y piloto.
+
+El desarrollo sigue en el repositorio y Supabase actuales con datos de prueba. Cuando el cliente entregue sus accesos, transferir código e historial, aplicar migraciones al Supabase de destino, configurar variables y dominio en el hosting de destino y verificar Auth/RLS allí. Coordinar qué datos se transfieren antes del corte.
